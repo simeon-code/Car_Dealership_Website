@@ -1,0 +1,112 @@
+.map-frames{
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.contacts-main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 10%;
+    max-width: 2000px;;
+    height: 80vh;
+}
+
+.offices-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-main-container h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.contacts-main-container h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    user-select: none;
+}
+
+.local-office-container p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.local-office-phone{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.local-office-phone:hover{
+    color: navy;
+    transition: 0.3s ease-in-out;
+}
+
+.local-office-phone:hover i{
+    animation: phone-shaking 0.5s;
+}
+
+@keyframes phone-shaking {
+    0%{
+        transform: rotate(5deg);
+    }
+    50%{
+        transform: rotate(-5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.offices-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.local-office-container{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    flex: 50;
+}
+
+#sofia-office{
+    margin: 0px 15px 0px 0px;
+}
+
+#autstin-office{
+    margin: 0px 0px 0px 15px;
+}
+
+@media  screen and (max-width:1070px) {
+    .contacts-main-container{
+        height: auto;
+    }
+    
+    .offices-container{
+        flex-direction: column;
+    }
+
+    .contacts-main-container h2{
+        margin-top:40px;
+    }
+
+    .map-frames{
+        height: 200px;
+    }
+    
+    #sofia-office{
+        margin: 0px;
+    }
+    
+    #autstin-office{
+        margin: 0px;
+    }
+}
