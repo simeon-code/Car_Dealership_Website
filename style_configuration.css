@@ -112,7 +112,7 @@
     cursor: pointer;
 }
 
-.motor-buttons p{
+.motor-buttons span{
     float: right;
     font-weight: 600;
 }
@@ -204,7 +204,7 @@
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    background:rgba(red, green, blue, 0);
+    background:rgba(0, 0, 0, 0%);
     border:2px solid black;
 }
 
